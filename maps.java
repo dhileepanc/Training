@@ -17,12 +17,11 @@ class Maps1 {
 		hm.put(4, "safsef"); // duplicate keys not printed
 		hm.put(5, "saa");
 		hm.put(6, "saa"); // duplicate values accepted
-		
-		HashMap hm1=new HashMap<>();
+
+		HashMap hm1 = new HashMap<>();
 		hm1.putAll(hm);
-		System.out.println("hm1 :"+hm1);
-		
-		
+		System.out.println("hm1 :" + hm1);
+
 //		for(Map.Entry m=hm.entrySet())
 //		{
 //			System.out.println(m);
@@ -63,32 +62,27 @@ class Maps1 {
 			System.out.println(m);
 		}
 
-		System.out.println(hm.containsKey(4));  // check key contained or not
+		System.out.println(hm.containsKey(4)); // check key contained or not
 		System.out.println(hm.containsValue("Dhileepan")); // check value contained or not
-	
-	
-		//if you use tree map its printing as ascend order or sorted
-		TreeMap tm=new TreeMap<>();
+
+		// if you use tree map its printing as ascend order or sorted
+		TreeMap tm = new TreeMap<>();
 		tm.put(541, "ygughjk");
 		tm.put(301, "iygigigh");
 		tm.put(505, "sgsg");
 		tm.put(1, "Zzzzzzz");
-		
+
 		System.out.println(tm);
 		tm.replace(1, "yyyy"); // replace the key and values
 		System.out.println(tm);
 		System.out.println(tm.size()); // size of the map
-		System.out.println(tm.isEmpty()); 
-		tm.putIfAbsent(2, "eeee");  // insert the element
+		System.out.println(tm.isEmpty());
+		tm.putIfAbsent(2, "eeee"); // insert the element
 		System.out.println(tm);
-		tm.replaceAll((k,v)->"llll");
+		tm.replaceAll((k, v) -> "llll"); // use replace all method to replace all the values
 		System.out.println(tm);
-		
-	
-	
-	
+
 	}
-	
 
 }
 
